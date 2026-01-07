@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Project Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Project Progress Tracker</h1>
+
+    <!-- Project Info -->
+    <div class="card">
+        <h2>Project Details</h2>
+        <p><strong>Project Name:</strong> Smart Attendance System</p>
+        <p><strong>Mentor:</strong> Prof. Sharma</p>
+    </div>
+
+    <!-- Task Section -->
+    <div class="card">
+        <h2>Tasks</h2>
+
+        <table>
+            <tr>
+                <th>Task Name</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Frontend Design</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Backend Setup</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>GitHub Integration</td>
+                <td>To Do</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="card">
+        <h2>Project Progress</h2>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">60%</div>
+        </div>
+    </div>
+
+    <!-- GitHub Section -->
+    <div class="card">
+        <h2>GitHub Activity</h2>
+        <p>Total Commits: <span id="commitCount">15</span></p>
+        <button onclick="refreshCommits()">Refresh</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
